@@ -10,6 +10,7 @@ import org.togglz.core.context.FeatureContext;
 
 public enum MyFeatures implements Feature {
 
+
     @Label("Employee Management Feature")
     @EnabledByDefault
     @DefaultActivationStrategy(id = SystemPropertyActivationStrategy.ID,

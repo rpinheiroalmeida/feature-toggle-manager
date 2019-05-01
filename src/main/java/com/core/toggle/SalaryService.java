@@ -9,8 +9,8 @@ public class SalaryService {
     @Autowired
     EmployeeRepository employeeRepository;
 
-    @FeatureAssociation(value = MyFeatures.EMPLOYEE_MANAGEMENT_FEATURE)
-//    @FeatureAssociation(value = MyFeatures.EMPLOYEE_MANAGEMENT_FEATURE)
+    @FeatureToggle(value = MyFeatures.EMPLOYEE_MANAGEMENT_FEATURE)
+//    @FeatureToggle(value = MyFeatures.EMPLOYEE_MANAGEMENT_FEATURE)
     public void increaseSalary(long id) {
         Employee employee = employeeRepository.findById(id).orElse(null);
         employee.setSalary(employee.getSalary() +

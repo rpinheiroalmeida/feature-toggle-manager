@@ -15,7 +15,7 @@ public class FeaturesAspect {
     @Around(
             "@within(featureAssociation) || @annotation(featureAssociation)"
     )
-    public Object around(ProceedingJoinPoint joinPoint, FeatureAssociation featureAssociation) throws Throwable {
+    public Object around(ProceedingJoinPoint joinPoint, FeatureToggle featureAssociation) throws Throwable {
         if (featureAssociation.value().isActive()) {
             return joinPoint.proceed();
         } else {
