@@ -1,5 +1,7 @@
-package com.toggle.core;
+package com.toggle.example;
 
+import com.toggle.core.FeatureToggle;
+import com.toggle.core.MyFeatures;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

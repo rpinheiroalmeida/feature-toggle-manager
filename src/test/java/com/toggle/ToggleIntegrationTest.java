@@ -1,7 +1,7 @@
 package com.toggle;
 
-import com.toggle.core.Employee;
-import com.toggle.core.EmployeeRepository;
+import com.toggle.example.Employee;
+import com.toggle.example.EmployeeRepository;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

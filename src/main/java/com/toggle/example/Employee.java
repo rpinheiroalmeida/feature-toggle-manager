@@ -1,4 +1,4 @@
-package com.toggle.core;
+package com.toggle.example;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

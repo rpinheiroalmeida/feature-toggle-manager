@@ -1,4 +1,4 @@
-package com.toggle.core;
+package com.toggle.example;
 
 import org.springframework.data.repository.CrudRepository;
 
