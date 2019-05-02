@@ -1,5 +1,7 @@
-package com.core.toggle;
+package com.toggle;
 
+import com.toggle.core.Employee;
+import com.toggle.core.EmployeeRepository;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -15,9 +17,9 @@ import static org.junit.Assert.assertEquals;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-@RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.MOCK, classes = ToggleApplication.class)
 @AutoConfigureMockMvc
+@RunWith(SpringJUnit4ClassRunner.class)
 public class ToggleIntegrationTest {
 
     @Autowired

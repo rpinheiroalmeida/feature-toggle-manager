@@ -1,4 +1,4 @@
-package com.core.toggle;
+package com.toggle.core;
 
 import org.togglz.core.Feature;
 import org.togglz.core.activation.SystemPropertyActivationStrategy;

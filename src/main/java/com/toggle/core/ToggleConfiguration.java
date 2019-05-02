@@ -1,4 +1,4 @@
-package com.core.toggle;
+package com.toggle.core;
 
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.Bean;
@@ -8,8 +8,8 @@ import org.togglz.core.manager.EnumBasedFeatureProvider;
 import org.togglz.core.spi.FeatureProvider;
 
 @Configuration
-@EnableJpaRepositories("com.core.toggle")
-@EntityScan("com.core.toggle")
+@EnableJpaRepositories("com.toggle.core")
+@EntityScan("com.toggle.core")
 public class ToggleConfiguration {
 
     @Bean

@@ -1,4 +1,4 @@
-package com.core.toggle;
+package com.toggle.core;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

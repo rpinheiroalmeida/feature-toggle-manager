@@ -1,4 +1,4 @@
-package com.core.toggle;
+package com.toggle.core;
 
 
 import java.lang.annotation.ElementType;

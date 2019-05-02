@@ -1,4 +1,4 @@
-package com.core.toggle;
+package com.toggle.core;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -10,7 +10,6 @@ public class SalaryService {
     EmployeeRepository employeeRepository;
 
     @FeatureToggle(value = MyFeatures.EMPLOYEE_MANAGEMENT_FEATURE)
-//    @FeatureToggle(value = MyFeatures.EMPLOYEE_MANAGEMENT_FEATURE)
     public void increaseSalary(long id) {
         Employee employee = employeeRepository.findById(id).orElse(null);
         employee.setSalary(employee.getSalary() +
